@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer's Portfolio</title>
+
+  <!-- Bootstrap Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container flex-lg-column">
+      <a class="navbar-brand me-auto " href="#">
+        <img src="./images/logo.png" alt="" id="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse me-auto" id="navbarNav">
+        <ul class="navbar-nav flex-lg-column" id="links">
+          <li class="nav-item">
+            <span class="home">
+              <i class="fas fa-house text-white"></i>
+              <a class="nav-link" href="#landing"> Home</a>
+            </span>
+          </li>
+          <li class="nav-item">
+            <span class="project">
+              <i class="fa-solid fa-folder text-white"></i>
+              <a class="nav-link" href="#Projects"> Projects</a>
+              </span>
+          </li>
+          <li class="nav-item">
+            <span class="tool">
+              <i class="fa-solid fa-screwdriver-wrench text-white"></i>
+              <a class="nav-link" href="#Tools"> Tools</a>
+            </span>
+          </li>
+          <li class="nav-item">
+            <span class="contact">
+              <i class="fa-solid fa-address-book text-white"></i>
+              <a class="nav-link" href="#Contact"> Contact</a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- LANDING SECTION -->
+  <section class="container-fluid" id="landing">
+    <div class="row">
+      <div class="col-12 col-lg-6 me-auto p-5 order-last order-lg-first"  data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="500">
+        <span>Hello, I am a </span>
+        <h1 class="fw-bold mt-2" id="h1">FULL STACK DEVELOPER</h1>
+        <span>If you're looking for someone to create and maintain your websites, I'm your guy!. The name is Ken Jun Sanvictores, to give a brief introduction, I am a Career Shifter, a Civil Engineering graduate of the Technological Institute of the Philippines. My basic coding background consist of a little html on highschool, a little python and arduino from my mechatronics class, and the rest I learned from self studying and teachings from Zuitt Bootcamp.</span>
+      </div>
+      <div class="col-12 col-lg-6 mt-5 text-center text-lg-start order-first order-lg-last" data-aos="fade-down" data-aos-easing="linear"
+      data-aos-duration="500" data-aos-delay="250">
+      <img src="./images/me.jpg" alt="" >
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PROJECTS SECTION -->
+  <section class="container-fluid" id="Projects">
+    <div class="row">
+      <h2 class="fw-bold mt-2" id="h2">Current and Future Projects</h2>
+      <div class="col-lg-2"></div>
+      <div class="col-lg-3 col-md-4">
+        <div class="card shadow-effect" style="width: 18rem;" data-aos="fade-up">
+          <img src="./images/Portfolio.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Digital Portfolio</h5>
+            <p class="card-text">Explore a diverse collection of projects that span the realms of graphic design, web development, multimedia production, ...</p>
+            <a href="#landing" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <div class="card shadow-effect" style="width: 18rem;" data-aos="fade-up" data-aos-delay="200">
+          <img src="./images/FoodWeb.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Food Booking Website</h5>
+            <p class="card-text">Discover a diverse array of restaurants, cafes, and eateries, all curated to satisfy every palate and preference. From cozy ...</p>
+            <a href="https://www.google.com/search?q=foodbooking+app&client=opera-gx&hs=xGF&sca_esv=594996447&sxsrf=AM9HkKlBlt3PF7wYA8nzQLCcJkmVNQBtWw%3A1704166520072&ei=eISTZYD_A8SN2roPpJ6m0AQ&ved=0ahUKEwiAm8SA472DAxXEhlYBHSSPCUoQ4dUDCBA&uact=5&oq=foodbooking+app&gs_lp=Egxnd3Mtd2l6LXNlcnAiD2Zvb2Rib29raW5nIGFwcDIFEAAYgAQyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiKBRiGAzILEAAYgAQYigUYhgMyCxAAGIAEGIoFGIYDSMgdUABY_htwAHgBkAEAmAGfAaABzhCqAQQwLjE1uAEDyAEA-AEBwgIKECMYgAQYigUYJ8ICChAAGIAEGIoFGEPCAgoQLhiABBiKBRhDwgIREC4YgAQYsQMYgwEYxwEY0QPCAgsQABiABBixAxiDAcICBBAjGCfCAggQABiABBixA8ICEBAAGIAEGIoFGEMYsQMYyQPCAgsQABiABBiKBRiSA8ICCxAuGK8BGMcBGIAE4gMEGAAgQYgGAQ&sclient=gws-wiz-serp" class="btn ">Read More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4">
+        <div class="card shadow-effect" style="width: 18rem;" data-aos="fade-up" data-aos-delay="400">
+          <img src="./images/FoodBlog.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Food Blog</h5>
+            <p class="card-text">Dive into our carefully crafted content, where vibrant images and detailed descriptions bring each culinary experience ...</p>
+            <a href="https://www.google.com/search?client=opera-gx&q=foodblog&sourceid=opera&ie=UTF-8&oe=UTF-8" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+
+<!-- TOOLS SECTION -->
+  <section class="container-fluid" id="Tools">
+    <div class="row">
+      <h2 class="fw-bold mt-2" id="h2">Tools</h2>
+      <div class="text-center" id="toolLabel">
+        <ul>
+          <li>
+            <span>Front End Tools</span>
+          </li>
+          <li>
+            <span class="frontEnd">
+              <img src="./images/html5.png" alt="" data-aos="flip-left" data-aos-duration="500">
+              <img src="./images/css.png" alt="" data-aos="flip-left" data-aos-delay="100" data-aos-duration="500">
+              <img src="./images/bootstrap.png" alt=""data-aos="flip-left" data-aos-delay="200" data-aos-duration="500">
+              <img src="./images/js.png" alt="" data-aos="flip-left" data-aos-delay="300" data-aos-duration="500">
+            </span>
+          </li>
+          <li>
+            <span>MERN Tools</span>
+          </li>
+          <li>
+            <span class="MERN">
+              <img src="./images/mongodb.png" alt="" data-aos="flip-left" data-aos-duration="500">
+              <img src="./images/ejs.png" alt="" data-aos="flip-left" data-aos-delay="100" data-aos-duration="500">
+              <img src="./images/react.png" alt="" data-aos="flip-left" data-aos-delay="200" data-aos-duration="500">
+              <img src="./images/nodejs.png" alt="" data-aos="flip-left" data-aos-delay="300" data-aos-duration="500">
+            </span>
+          </li>
+          <li>
+            <span>Other Tools</span>
+          </li>
+          <li>
+            <span class="other">
+              <img src="./images/photoshop.jpg" alt="" data-aos="flip-left" data-aos-duration="500">
+              <img src="./images/msoffice.png" alt="" data-aos="flip-left" data-aos-delay="100" data-aos-duration="500">
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<!-- CONTACT SECTION -->
+  <section class="container-fluid" id="Contact">
+    <div class="row justify-content-center">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5">
+        <h2 class="fw-bold my-3">Visit Us</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6494.595772104914!2d121.13534545322565!3d14.558583512293028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7de3184f951%3A0x840ef264804c52b5!2sManila%20East%20Homes%20Subdivision!5e0!3m2!1sen!2sph!4v1703920028694!5m2!1sen!2sph" ></iframe>
+      </div>
+      <div class="col-lg-5">
+        <h2 class="fw-bold my-3">Contact Me</h2>
+        <div class="mb-3">
+          <label for="formGroupExampleInput" class="form-label text-light text-center">Full Name</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput2" class="form-label text-light text-center">Email Address</label>
+          <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="email@gmail.com">
+        </div>
+        <div class="mb-3">
+          <label for="formGroupExampleInput3" class="form-label text-light text-center">Contact Number</label>
+          <input type="number" class="form-control" id="formGroupExampleInput3" placeholder="+63 000 000 0000">
+        </div>
+        <div class="mb-3">
+          <label for="disabledSelect" class="form-label text-light text-center">Concerns</label>
+          <select id="disabledSelect" class="form-select">
+            <option>-- -- -- -- -- -- --</option>          
+           <option>Technical Issue</option>
+           <option>Billing Inquiry</option>
+           <option>Content Copyright</option>
+           <option>Partnership Proposal</option>
+           <option>Other (please specify)</option>
+          </select>
+        </div>
+        <label for="formGroupExampleInput4" class="form-label text-light text-center">Message</label>
+        <div class="form-floating">
+          <textarea class="form-control mb-3" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+          <label for="floatingTextarea"></label>
+        </div>
+        <!-- Button trigger modal -->
+				<button id="formcol" type="button" class="btn px-3 mt-2 mb-5" data-bs-toggle="modal" data-bs-target="#modalDiv">
+					Send Email
+				</button>
+
+				<!-- Modal -->
+				<div class="modal fade" id="modalDiv" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+						  <div class="modal-header">
+						    <h1 class="modal-title fs-5 text-dark" id="staticBackdropLabel">Thank you for contacting us!</h1>
+						    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						  </div>
+						  <div class="modal-body text-dark">
+						    Message Successfully Sent
+						  </div>
+						  <div class="modal-footer">
+						    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					</div>
+				</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container-fluid" id="footer">
+    <div class="row text-dark text-center">
+      <div class="col-lg-1"></div>
+      <div class="footer col-lg-5" id="rights">2023 Ken Sanvictores Digital Portfolio | All rights reserved.</div>
+      <div class="col-lg-5">
+        <ul class="supportLinks d-flex">
+          <li>
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+              <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+          <li>
+              <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+          </li>
+          <li>
+              <a href="https://about.gitlab.com/"><i class="fa-brands fa-gitlab"></i></a>
+          </li>
+        </ul>
+        <span></i></span>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+    <!--JS Links  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/05dfca737d.js" crossorigin="anonymous"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

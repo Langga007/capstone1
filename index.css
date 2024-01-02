@@ -1,0 +1,431 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background:var(--color-background2);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.container {
+  width: 100%;
+}
+
+:root{
+  --color-navbar: rgb(133, 134, 95);
+  --color-background:  #8A584C;
+  --color-background2: white;
+  --color-text: #F9EAFF;
+  --text-highlight: #FFF5E1;
+  --text-highlight2:  #123524;
+  --sidebar-width:250px
+}
+
+@media (min-width: 992px) {
+  .navbar{
+    min-height: 100vh;
+    width: 150px;
+    background: linear-gradient(rgba(79, 88, 61,0.2 ), rgba(79, 88, 61,0.2)), url(./images/road.jpg);
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    display: flex;
+    transition: width 0.3s ease;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar #logo{
+    width: 80px;
+    height: auto;
+    margin-left: 20px;
+  }
+
+  .navbar:hover #logo{
+    margin-left: 70px;
+    transition: all 0.4s ease;
+  }
+
+  .navbar li {
+    height: 3rem;
+    width: 250px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+    list-style-type: none;
+    display: flex; /* Add this to make icon and text align horizontally */
+    align-items: center; /* Add this to vertically center the content */
+    overflow: hidden;
+    margin-left: 50px;
+    font-size: 1.2rem;
+  }
+
+  .navbar:hover li {
+    margin-left: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar:hover i {
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar li span a {
+    display: none;
+  }
+
+  .navbar:hover li span a {
+    display: inline-block;
+  }
+  
+  .home:hover, .project:hover, .tool:hover, .contact:hover {
+    cursor: pointer;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 200px;
+    background-color: rgba(212, 168, 176, 0.308);
+    margin-left: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar:hover{
+    width: var(--sidebar-width);
+  }
+
+  #landing{
+    padding-left: var(--sidebar-width);
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(./images/autumn.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  #h1{
+    font-size: 2.2rem;
+    color: var(--text-highlight);
+    margin-bottom: 15px;
+  }
+  
+  #landing img{
+    width: 300px;
+    height: auto;
+    border-radius: 100%;
+  }
+  
+  #Projects {
+    margin-top: 12rem;
+    padding: 20px; /* Add padding or adjust as needed */
+  }
+  
+  #Projects img{
+    width: 18rem;
+    height: auto;
+  }
+
+  .shadow-effect{
+    transition: all 0.5s;
+  }
+
+  .shadow-effect:hover{
+    box-shadow: -8px 8px 0 0 var(--color-background);
+    overflow: hidden;
+  }
+
+  .card{
+    overflow: hidden;
+  }
+  .card img{
+    transition: all 0.4s ease; 
+  }
+
+  .card:hover img{
+    transform: scale(1.1) ;
+  }
+
+  /* Adjust as needed for spacing and styling */
+  #h2 {
+    font-size: 2.2rem;
+    color: var(--text-highlight2);
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  #Tools {
+    margin-top: 10rem;
+    padding: 20px; /* Add padding or adjust as needed */
+  }
+
+  #Tools .frontEnd img, .MERN img {
+    width: 100px;
+    height: auto;
+  }
+
+  .other img{
+    width: 65px;
+    height: auto;
+    margin-left: 25px;
+  }
+
+  #Tools li{
+    font-size: 1.7rem;
+    list-style-type: none;
+  }
+
+  #Contact {
+    margin-top: 100px;
+    padding-left: var(--sidebar-width);
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(./images/autumn.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    margin-top: 10rem;
+    padding: 20px; /* Add padding or adjust as needed */
+  }
+
+  #Contact #formcol{
+    background: linear-gradient(rgba(133, 134, 95,0.6), rgba(133, 134, 95,0.8));
+  }
+
+  #Contact iframe{
+    width:  550px;
+    height: 450px;
+  }
+
+  #footer{
+    height: 5rem;
+    background-color: #4F583D;
+  }
+
+  .btn{
+    background: linear-gradient(rgba(133, 134, 95,0.6), rgba(133, 134, 95,0.8)); 
+    transition: all 0.4s ease;
+  }
+
+  .btn:hover{
+    color: white;
+    background: #8A584C;;
+  }
+
+  #rights{
+    margin-top: 1.5rem;
+    color: white;
+  }
+
+  .supportLinks{
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 10rem;
+    margin-top: 1.5rem;
+  }
+
+  .supportLinks a {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white; /* Change the color to your desired color */
+    margin-right: 40px; /* Add some spacing between the icons */
+  }
+
+  .supportLinks a:hover {
+    color: #8A584C; /* Change the hover color */
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    width: 100%; /* Adjust as needed */
+  }
+
+  .navbar li {
+    display: inline-block; /* Change to display: block */
+    width: 100%; /* Make each list item take the full width */
+    margin: 0;
+    padding: 10px; /* Adjust as needed for spacing */
+    text-align: center; /* Center the text */
+  }
+
+  .navbar #logo {
+    margin-left: 0; /* Adjust as needed */
+  }
+
+  .navbar i{
+    display: none;
+  }
+
+  #landing{
+    color: black;
+  }
+
+  #Tools {
+    margin-top: 10rem;
+    padding: 20px; /* Add padding or adjust as needed */
+  }
+
+  #Tools .frontEnd img, .MERN img {
+    width: 100px;
+    height: auto;
+  }
+
+  .other img{
+    width: 65px;
+    height: auto;
+    margin-left: 25px;
+  }
+
+  #Tools li{
+    font-size: 1.7rem;
+    list-style-type: none;
+  }
+
+  #Contact #formcol{
+    background: linear-gradient(rgba(133, 134, 95,0.6), rgba(133, 134, 95,0.8));
+  }
+
+  #Contact iframe{
+    width:  100%;
+    height: 450px;
+  }
+
+  #footer{
+    height: 7rem;
+    background-color: #4F583D;
+  }
+
+  #rights{
+    margin-top: 1rem;
+    color: white;
+  }
+
+  .supportLinks{
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  .supportLinks a {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: white; /* Change the color to your desired color */
+    margin-right: 40px; /* Add some spacing between the icons */
+  }
+
+  .supportLinks a:hover {
+    color: #8A584C; /* Change the hover color */
+  }
+
+  .btn{
+    background: linear-gradient(rgba(133, 134, 95,0.6), rgba(133, 134, 95,0.8)); 
+    transition: all 0.4s ease;
+  }
+
+  .btn:hover{
+    color: white;
+    background: #8A584C;;
+  }
+
+  .shadow-effect{
+    transition: all 0.5s;
+  }
+
+  .shadow-effect:hover{
+    box-shadow: -8px 8px 0 0 var(--color-background);
+    overflow: hidden;
+  }
+
+  .card{
+    overflow: hidden;
+  }
+  .card img{
+    transition: all 0.4s ease; 
+  }
+
+  .card:hover img{
+    transform: scale(1.1) ;
+  }
+
+}
+
+@media (max-width: 767px) {
+ #landing #h1{
+ font-size: 1.5rem;
+ }
+
+ #Projects{
+  text-align: center;
+ }
+ 
+ #Projects .card{
+  margin-left: 45px;
+  margin-top: 30px;
+ }
+
+
+  #Tools{
+    margin-left: -15px;
+  }
+  .other img{
+    width: 65px;
+    height: auto;
+    margin-left: 25px;
+  }
+
+
+  #Contact iframe{
+    width:  100%;
+    height: 200px;
+  }
+
+  #footer{
+    height: 9rem;
+    background-color: #4F583D;
+  }
+}
+.navbar{
+  background-color: #4F583D;
+}
+
+.navbar .nav-link{
+ font-weight: 700;
+ text-transform: uppercase;
+ color: white;
+}
+
+.navbar #logo{
+  width: 80px;
+  height: auto;
+  margin-left: 20px;
+}
+
+.navbar .nav-link:hover{
+color: var(--text-highlight2);
+}
+
+#landing img{
+  width: 280px;
+  height: auto;
+  border-radius: 100%;
+}
+
+#landing{
+  margin-top: 20vh;
+}
+
+textarea{
+  height: 100px;
+}
+
+
+/*
+COLOR PALLETE
+#0E0347
+#442F78
+#F9EAFF
+#00C9A4
+*/
