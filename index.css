@@ -8,7 +8,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  font-family: 'Signika Negative', sans-serif;
 }
 .container {
   width: 100%;
@@ -25,6 +25,49 @@ body{
 }
 
 @media (min-width: 992px) {
+  #name{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--text-highlight);
+    margin-bottom: 15px;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+  }
+
+  #highlight{
+    font-size: 1rem;
+    font-weight: bold ;
+    color: var(--text-highlight);
+    font-family: 'Signika Negative', sans-serif;
+    font-style: italic;
+  }
+
+  span{
+    font-family: 'Signika Negative', sans-serif;
+  }
+
+  .paragraph-3{
+    margin-top: 2rem;
+    
+  }
+
+  #landing{
+    padding-left: var(--sidebar-width);
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(./images/autumn.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+  }
+
+  #landing img{
+    width: 300px;
+    height: auto;
+    margin-left: 440px;
+    border-radius: 100%;
+  }
+
   .navbar{
     min-height: 100vh;
     width: 150px;
@@ -97,31 +140,11 @@ body{
     width: var(--sidebar-width);
   }
 
-  #landing{
-    padding-left: var(--sidebar-width);
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.8)), url(./images/autumn.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-  }
-
-  #h1{
-    font-size: 2.2rem;
-    color: var(--text-highlight);
-    margin-bottom: 15px;
-  }
-  
-  #landing img{
-    width: 300px;
-    height: auto;
-    border-radius: 100%;
-  }
+ 
   
   #Projects {
     margin-top: 12rem;
-    padding: 20px; /* Add padding or adjust as needed */
+    padding: 10px; /* Add padding or adjust as needed */
   }
   
   #Projects img{
@@ -140,6 +163,7 @@ body{
 
   .card{
     overflow: hidden;
+    margin-left: 50px;
   }
   .card img{
     transition: all 0.4s ease; 
@@ -155,6 +179,10 @@ body{
     color: var(--text-highlight2);
     margin-bottom: 30px;
     text-align: center;
+  }
+
+  #toolLabel{
+    margin-left: 60px;
   }
 
   #Tools {
@@ -353,7 +381,7 @@ body{
 }
 
 @media (max-width: 767px) {
- #landing #h1{
+ #landing #name{
  font-size: 1.5rem;
  }
 
